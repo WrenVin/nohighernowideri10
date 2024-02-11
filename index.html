@@ -60,6 +60,28 @@
     height: 50px; /* Adjust based on your navbar height */
     vertical-align: middle; /* Aligns the logo vertically in the navbar */
 }
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.w3-top {
+    animation: slideDown 0.5s ease-out forwards;
+}
+.w3-bar-item:hover, .w3-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+header {
+    background-attachment: fixed;
+}
+
+
     
 
 
@@ -150,7 +172,19 @@
     -->
     <footer><p>©2024 NoHigherNoWideri10</p></footer>
 
-    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+
+    </script>
+
 
 </body>
 
