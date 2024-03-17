@@ -2933,9 +2933,9 @@ input, select, textarea {
 				#header .logo {
 					border-radius: 50%;
 					/* Makes the image circular */
-					width: 100px;
+					width: 125px;
 					/* Adjusts the width, change as needed */
-					height: 100px;
+					height: 125px;
 					/* Adjusts the height to maintain aspect ratio */
 					object-fit: cover;
 					/* Ensures the image covers the area without stretching */
