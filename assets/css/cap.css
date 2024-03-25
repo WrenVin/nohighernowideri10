@@ -2213,7 +2213,7 @@ input, select, textarea {
 }
 
 .image:after {
-	background-image: url("image.png");
+	background-image: url("cap1.png");
 	content: '';
 	display: block;
 	height: 100%;
@@ -2261,7 +2261,7 @@ input, select, textarea {
 	}
 
 				.image2:after {
-					background-image: url("bg.jpeg");
+					background-image: url("cap2.png");
 					content: '';
 					display: block;
 					height: 100%;
@@ -2310,7 +2310,7 @@ input, select, textarea {
 }
 
 .image3:after {
-	background-image: url("image3.jpeg");
+	background-image: url("cap3.png");
 	content: '';
 	display: block;
 	height: 100%;
