@@ -11,15 +11,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="logo.jpeg">
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Header -->
 			<div id="header">
-				<img src="logo.jpeg" alt="Logo" class="logo">
-				<div class="text-overlay">
-				<h1>No Higher No Wider I-10</h1>
-				<p><b>Let’s build a project that enhances the
+				<img src="logo.jpeg" alt="Logo" class="logo" data-aos="fade-up">
+				<div class="text-overlay" data-aos="fade-up">
+				<h1 >No Higher No Wider I-10</h1>
+				<p ><b>Let’s build a project that enhances the
 				<br />
 				community, not displaces it!</b></p>
 				</div>	
@@ -27,7 +28,7 @@
 				<nav class="header-option">
 					<ul>
 						<li>
-							<div class="contact-us-gradient"><a href="caps.html">Successful Highway Caps</a></div>
+							<div class="contact-us-gradient" data-aos="fade-up"><a href="caps.html">Successful Highway Caps</a></div>
 						</li>
 					</ul>
 				</nav>
@@ -35,31 +36,18 @@
 
 		<!-- Main -->
 			<div id="main">
-<!--
-				<header class="major container medium">
-					<h3 style="text-transform: none;">The TxDOT comment period is open NOW until April 1st! Please send comments saying you support our design alternative. <br> 
-					<ul>
-						<li>- Email to <a href="mailto:HOU-PIOwebmail@txdot.gov">HOU-PIOwebmail@txdot.gov</li></a>
-						<li> - Address to: TxDOT Houston District</li>
-						<li> - Attn: Advanced Project Development Director</li>
-						<li> - Project Reference: CSJ: 0271-07-327 I-10 Inner Katy Managed Lanes Project</li>
-					</ul>
-					Please mention “No Higher No Wider I-10” in your letter. Explain to TxDOT why you feel a capped design needs to be explored, and restate that you do not support design alternatives 1 and 2. <br>
-				Click <a href="https://drive.google.com/drive/folders/1VO56MwRvins6ucJvr7OnTU530oDb84Up?usp=sharing">HERE</a> for letter templates a guidelines.</h3>					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
-				</header>
+
+				
 
 				<div class="box alt container">
-					<section class="feature left">
+					<section class="feature left" data-aos="fade-up">
 						<a href="" class="image"></a>
 						<div class="content">
 							<h3>What is the I-10 Expansion</h3>
 							<p>The I-10 TxDOT project is a highway expansion in Houston, planning to elevate I-10 and expand its lanes from Voss to I-45. This initiative
 							aims to manage traffic but will significantly harm the city's landscape and infrastructure, while still not reducing congestion.</p></div>
 					</section>
-					<section class="feature right">
+					<section class="feature right" data-aos="fade-up">
 						<a href="" class="image2"></a>
 						<div class="content">
 							<h3>How will this affect Houston</h3>
@@ -73,7 +61,7 @@
 							</div>
 							</div>	
 					</section>
-					<section class="feature left">
+					<section class="feature left" data-aos="fade-up">
 						<a href="" class="image3"></a>
 						<div class="content">
 							<h3>Our Proposal</h3>
@@ -89,9 +77,18 @@
 					</div>
 					</section>
 				</div>
+				<footer class="major container medium" style="padding: 1em; padding-top:3em" data-aos="fade-up">
+					<h4 style="text-transform: none;">Endorsed By:</h4>
+					<ul>
+						<li><a href="https://www.houstontx.gov/superneighborhoods/15.html#:~:text=LOCATION%3A%20Greater%20Heights%20is%20located,Oak%20Bayou%20to%20the%20west.">Superneighborhood 15</a></li>
+						<li><a href="http://westwoodcivicclub.com/">West End Civic Club</a></li>
+						<li><a href="https://www.walkandrollhouston.com/">Walk and Roll Houston</a></li>
+						<li><a href="https://www.cottagegrovehouston.org/">Cottage Grove</a></li>					
+					</ul>
+				</footer>
 
 
-				<footer class="major container medium">
+				<footer class="major container medium" data-aos="fade-up">
 					<h3>Get involved</h3>
 					<p>Sign the petitions to cap I-10 
     and to make 
@@ -104,10 +101,10 @@
 			</div>
 
 		<!-- Footer -->
-			<div id="footer">
+			<div id="footer" data-aos="fade-up">
 				<div class="container medium">
 
-					<ul class="copyright">
+					<ul class="copyright" data-aos="fade-up">
 						<li>&copy; No Higher No Wider 2024. All rights reserved.</li></li>
 					</ul>
 
@@ -115,6 +112,11 @@
 			</div>
 
 		<!-- Scripts -->
-			
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 700, // Duration of the animations in milliseconds
+			});
+		</script>
 	</body>
 </html>
