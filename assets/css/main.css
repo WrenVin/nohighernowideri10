@@ -73,18 +73,11 @@ input, select, textarea {
 }
 
 .text-overlay {
-	/* Use a radial gradient to create a smooth, oval-shaped shadow */
-	background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%);
+	/* Use an elliptical gradient to create a smoother transition */
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 	color: white;
-	/* White text color for better contrast */
 	padding: 10px;
-	/* Some padding around the text */
 	display: inline-block;
-	/* Makes the background only as wide as necessary */
-	border-radius: 50px;
-	/* Gives an oval shape to the background */
-	margin: 0;
-	/* Adjust margin as needed */
 }
 
 #header {
