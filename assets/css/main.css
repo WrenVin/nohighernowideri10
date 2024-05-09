@@ -3550,3 +3550,9 @@ input, select, textarea {
 .endorsement-text2 {
 	font-size: 16px;
 }
+
+@media screen and (max-width: 480px) {
+	.endorsement-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
