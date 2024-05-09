@@ -3525,7 +3525,8 @@ input, select, textarea {
 }
 .successful-highway-cap {
 	padding: 0;
-	padding-top: 25px;
+	padding-top: 40px;
+	padding-right: 10px;
 	font-size: 1.1em;
 	transition: transform 0.3s ease;
 	text-decoration: none;
