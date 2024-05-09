@@ -3538,3 +3538,11 @@ input, select, textarea {
 	text-decoration: none;
 	/* Grow bigger when hovered or pressed */
 }
+.endorsement-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+.endorsement-text {
+	font-size: 14px;
+}
