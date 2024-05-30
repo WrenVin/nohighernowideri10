@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background: rgb(253, 250, 240);
 }
 
 ol, ul {
@@ -53,6 +54,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	
 }
 
 mark {
@@ -111,7 +113,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: rgb(253, 250, 240);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2056,6 +2058,7 @@ input, select, textarea {
 
 	footer {
 		text-align: center;
+		background-color: rgb(253, 250, 240);
 	}
 
 		footer.major {
@@ -2404,6 +2407,8 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+				
+
 /* Actions */
 
 	ul.actions {
@@ -2416,7 +2421,17 @@ input, select, textarea {
 		margin-left: -1em;
 		padding-left: 0;
 	}
+		ul.actions.equal li {
+			flex: 1;
+		}
 
+		ul.actions.equal li>* {
+			width: 100%;
+			font-size: smaller;
+			/* Prevent text from wrapping */
+			text-align: center;
+			/* Center text alignment */
+		}
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
@@ -2988,7 +3003,7 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #ffffff;
+			background: rgb(253, 250, 240);
 		}
 
 		#footer strong, #footer b {
@@ -3085,7 +3100,7 @@ input, select, textarea {
 
 		#main header.major,
 		#main footer.major {
-			background: #ffffff;
+			background: rgb(253, 250, 240);
 		}
 
 /* Wide */
@@ -3161,6 +3176,7 @@ input, select, textarea {
 			footer.major {
 				margin-top: 4em;
 				padding: 3em 0;
+				
 			}
 
 		/* Box */
@@ -3554,5 +3570,64 @@ input, select, textarea {
 @media screen and (max-width: 480px) {
 	.endorsement-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+/* Define button styles */
+.button {
+	display: inline-block;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	color: white;
+	/* Ensure text is visible */
+	transition: background 0.3s ease;
+}
+
+/* Grey button */
+.button.grey {
+	background-color: #555;
+}
+
+/* Instagram gradient */
+.button.instagram-gradient {
+	background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+/* Facebook gradient */
+.button.facebook-gradient {
+	background: linear-gradient(45deg, #3b5998, #8b9dc3);
+}
+
+/* Container for buttons */
+.actions.equal {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	/* Adjust the gap between buttons */
+	justify-content: center;
+	width: 100%;
+}
+
+.actions.equal li {
+	flex: 1;
+	margin: 0;
+	/* Remove margins from list items */
+}
+
+.actions.equal li a {
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	/* Prevent text wrapping */
+}
+
+@media screen and (max-width: 736px) {
+	.actions.equal {
+		flex-direction: column;
+		gap: 5px;
+		/* Adjust gap for smaller screens */
 	}
 }
