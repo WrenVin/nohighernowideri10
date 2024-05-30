@@ -2433,7 +2433,7 @@ input, select, textarea {
 			/* Center text alignment */
 		}
 		ul.actions li {
-			padding: 0 0 0 1em;
+			
 			vertical-align: middle;
 		}
 
@@ -2514,7 +2514,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
-					padding: 1em 0 0 0;
+					
 					text-align: center;
 					width: 100%;
 				}
@@ -3634,4 +3634,96 @@ input, select, textarea {
 .icon-large {
 	font-size: 1.5em;
 	/* Adjust the size as needed */
+}
+/* Define button styles */
+.button {
+	display: inline-block;
+	
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	color: white;
+	/* Ensure text is visible */
+	transition: background 0.3s ease;
+	box-sizing: border-box;
+	/* Include padding and border in element's total width and height */
+}
+
+/* Grey button */
+.button.grey {
+	background-color: #555;
+}
+
+/* Instagram gradient */
+.button.instagram-gradient {
+	background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+/* Facebook gradient */
+.button.facebook-gradient {
+	background: linear-gradient(45deg, #3b5998, #8b9dc3);
+}
+
+/* Grid container for buttons */
+.actions.equal {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* 2 columns */
+	gap: 10px;
+	/* Gap between buttons */
+	justify-items: stretch;
+	width: 90%;
+	/* Adjust the width as needed */
+	margin-left: auto;
+	/* Center the grid container */
+	margin-right: auto;
+	/* Center the grid container */
+	padding: 0;
+	/* Remove any padding from the container */
+}
+
+.actions.equal li {
+	list-style: none;
+	margin: 0;
+	/* Remove margins from list items */
+	display: flex;
+	padding: 0;
+	/* Remove any padding from list items */
+}
+
+.actions.equal li a {
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	/* Prevent text wrapping */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	height: 100%;
+	box-sizing: border-box;
+	/* Include padding and border in element's total width and height */
+}
+
+.icon-large {
+	font-size: 1.5em;
+	/* Adjust the size as needed */
+}
+
+.button i {
+	margin-right: 8px;
+	/* Add some space between the icon and the text */
+	vertical-align: middle;
+	/* Align the icon vertically with the text */
+}
+
+.button {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+	transform: scale(1.03);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
