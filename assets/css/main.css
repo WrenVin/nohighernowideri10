@@ -3631,3 +3631,7 @@ input, select, textarea {
 		/* Adjust gap for smaller screens */
 	}
 }
+.icon-large {
+	font-size: 1.5em;
+	/* Adjust the size as needed */
+}
